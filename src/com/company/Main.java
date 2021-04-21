@@ -29,6 +29,7 @@ public class Main {
         dog.Feed();
         dog.Walk();
 
-        dog.Feed();
+        Car car1 = new Car();
+        car1.weight = 2000;
     }
 }
