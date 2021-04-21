@@ -2,6 +2,7 @@ package com.company;
 
 public class Main {
 
+
     public static void main(String[] args) throws Exception {
         // write your code here
         Animal dog = new Animal();
@@ -34,9 +35,9 @@ public class Main {
         passat.millage = 80000.0;
         passat.engineVolume = 1.9;
 
-        me.car = passat;
-
         System.out.println(me.getSalary());
         System.out.println(me.setSalary(1230.0));
+
+        me.setCar(passat);
     }
 }

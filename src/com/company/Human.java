@@ -4,12 +4,11 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Human {
-    public Car car1;
+    private Car car;
     String firstName;
     String lastName;
     Animal pet;
     Phone mobilePhone;
-    Car car;
 
     SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd 'at' HH:mm:ss z");
     Date date = new Date(System.currentTimeMillis());
@@ -31,5 +30,20 @@ public class Human {
         return this.salary = salary;
     }
 
+    public Car getCar() {
+        return car;
+    }
 
+    public void setCar(Car car) {
+        if (salary > car.price) {
+            System.out.println("Udało sie kupić za gotówkę");
+            this.car = car;
+        } else if (salary > car.price / 12) {
+            System.out.println("Udało się kupić na kredyt");
+            this.car = car;
+        } else {
+            System.out.println("zapisz się na studia i znajdź nową robotę albo idź po\n" +
+                    "podwyżkę");
+        }
+    }
 }
