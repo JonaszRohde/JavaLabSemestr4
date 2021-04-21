@@ -24,5 +24,9 @@ public class Main {
 
         System.out.println(me.firstName);
         System.out.println(me.pet.name);
+
+        cat.Feed();
+        dog.Feed();
+        dog.Walk();
     }
 }
