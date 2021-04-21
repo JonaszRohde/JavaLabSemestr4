@@ -1,10 +1,16 @@
 package com.company;
 
-public class Car
-{
-    final String producer = null;
-    final String model = null;
+public class Car {
+    public final String producer;
+    public final String model;
     public int weight;
-    Double Weight;
+    public String color;
+    public Double millage;
+    public Double engineVolume;
+
+    public Car(String model, String producer) {
+        this.model = model;
+        this.producer = producer;
+    }
 
 }

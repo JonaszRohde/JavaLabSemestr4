@@ -29,7 +29,11 @@ public class Main {
         dog.Feed();
         dog.Walk();
 
-        Car car1 = new Car();
-        car1.weight = 2000;
+        Car passat = new Car("Passat", "VW");
+        passat.color = "gray";
+        passat.millage = 80000.0;
+        passat.engineVolume = 1.9;
+
+        me.car = passat;
     }
 }
