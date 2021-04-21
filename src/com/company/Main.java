@@ -28,5 +28,7 @@ public class Main {
         cat.Feed();
         dog.Feed();
         dog.Walk();
+
+        dog.Feed();
     }
 }
