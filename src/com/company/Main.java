@@ -2,8 +2,8 @@ package com.company;
 
 public class Main {
 
-    public static void main(String[] args) {
-	// write your code here
+    public static void main(String[] args) throws Exception {
+        // write your code here
         Animal dog = new Animal();
         dog.species = "Canis familiaris";
         dog.name = "Szarik";
@@ -35,5 +35,8 @@ public class Main {
         passat.engineVolume = 1.9;
 
         me.car = passat;
+
+        System.out.println(me.getSalary());
+        System.out.println(me.setSalary(1230.0));
     }
 }
