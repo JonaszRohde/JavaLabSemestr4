@@ -8,13 +8,17 @@ public class Animal {
     String name;
     File pic;
 
-    void Feed(){
+    void Feed() {
         System.out.println("thx");
         this.weight += 1;
     }
 
-    void Walk(){
+    void Walk() {
         System.out.println("szybcieej");
         this.weight -= 1;
+    }
+
+    public String toString() {
+        return species + " " + weight + " " + name + " ";
     }
 }

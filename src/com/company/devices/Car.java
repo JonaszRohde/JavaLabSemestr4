@@ -1,4 +1,4 @@
-package com.company;
+package com.company.devices;
 
 public class Car {
     public final String producer;
@@ -12,6 +12,10 @@ public class Car {
     public Car(String model, String producer) {
         this.model = model;
         this.producer = producer;
+    }
+
+    public String toString() {
+        return producer + " " + model + " " + color + " " + millage + " " + engineVolume;
     }
 
 }

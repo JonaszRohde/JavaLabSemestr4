@@ -1,5 +1,8 @@
 package com.company;
 
+import com.company.devices.Car;
+import com.company.devices.Phone;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -9,6 +12,10 @@ public class Human {
     String lastName;
     Animal pet;
     Phone mobilePhone;
+
+    public String toString() {
+        return firstName + " " + lastName;
+    }
 
     SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd 'at' HH:mm:ss z");
     Date date = new Date(System.currentTimeMillis());

@@ -1,7 +1,8 @@
 package com.company;
 
-public class Main {
+import com.company.devices.Car;
 
+public class Main {
 
     public static void main(String[] args) throws Exception {
         // write your code here
@@ -39,5 +40,16 @@ public class Main {
         System.out.println(me.setSalary(1230.0));
 
         me.setCar(passat);
+
+        Car fakePassat = new Car("Passat", "VW");
+        fakePassat.color = "gray";
+        fakePassat.millage = 80000.0;
+        fakePassat.engineVolume = 1.9;
+
+        System.out.println(passat.equals(fakePassat));
+        System.out.println(passat);
+        System.out.println(dog);
+        System.out.println(cat);
+        System.out.println(me);
     }
 }
