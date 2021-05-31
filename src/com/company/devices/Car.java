@@ -1,8 +1,6 @@
 package com.company.devices;
 
-public class Car {
-    public final String producer;
-    public final String model;
+public class Car extends Device {
     public int weight;
     public String color;
     public Double millage;
@@ -15,7 +13,11 @@ public class Car {
     }
 
     public String toString() {
-        return producer + " " + model + " " + color + " " + millage + " " + engineVolume;
+        return producer + " " + model + " " + color + "\nMillage: " + millage + "\nEngine Volume: " + engineVolume + "\nYear of production: " + yearOfProduction;
+    }
+
+    public void turnOn() {
+        System.out.println("Starting the car..");
     }
 
 }
