@@ -6,12 +6,13 @@ import com.company.devices.Phone;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Human {
-    private Car car;
+public class Human implements sellable {
+    public Car car;
     String firstName;
     String lastName;
     Animal pet;
-    Phone mobilePhone;
+    public Phone mobilePhone;
+    public double cash;
 
     public String toString() {
         return firstName + " " + lastName;
@@ -52,5 +53,10 @@ public class Human {
             System.out.println("zapisz się na studia i znajdź nową robotę albo idź po\n" +
                     "podwyżkę");
         }
+    }
+
+    @Override
+    public void sell(Human seller, Human buyer, Double price) {
+        System.out.println("Human trafficking is illegal");
     }
 }
