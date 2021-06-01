@@ -1,7 +1,8 @@
 package com.company;
+
 import com.company.creatures.FarmAnimal;
 import com.company.creatures.Pet;
-import com.company.devices.Car;
+import com.company.devices.Disel;
 import com.company.devices.Phone;
 
 public class Main {
@@ -25,13 +26,15 @@ public class Main {
         System.out.println(me.firstName);
         System.out.println(me.pet.name);
 
+        cow.feed(20.0);
+        cow.walk();
         cat.feed();
         dog.feed();
         dog.walk();
         dog.feed(5.0);
         dog.walk();
 
-        Car passat = new Car("Passat", "VW");
+        Disel passat = new Disel("Passat", "VW", 2005);
         passat.color = "gray";
         passat.millage = 80000.0;
         passat.engineVolume = 1.9;
@@ -41,7 +44,7 @@ public class Main {
 
         me.setCar(passat);
 
-        Car fakePassat = new Car("Passat", "VW");
+        Disel fakePassat = new Disel("Passat", "VW", 2005);
         fakePassat.color = "gray";
         fakePassat.millage = 80000.0;
         fakePassat.engineVolume = 1.9;
@@ -53,14 +56,13 @@ public class Main {
         System.out.println(me);
         passat.turnOn();
 
-        Phone oneplus5 = new Phone("Oneplus", "5");
-        oneplus5.yearOfProduction = 2016;
+        Phone oneplus5 = new Phone("Oneplus", "5", 2016);
         oneplus5.screenSize = 5.5;
         oneplus5.operatingSystem = "Android 10";
         oneplus5.turnOn();
         me.mobilePhone = oneplus5;
 
-        Phone oneplus8pro = new Phone("Oneplus", "8 pro");
+        Phone oneplus8pro = new Phone("Oneplus", "8 pro", 2021);
         oneplus8pro.yearOfProduction = 2021;
         oneplus8pro.screenSize = 5.8;
         oneplus8pro.operatingSystem = "Android 11";
