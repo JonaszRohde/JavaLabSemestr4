@@ -1,19 +1,22 @@
-package com.company;
+package com.company.creatures;
 
-public class Animal implements sellable {
-    String species;
-    Double weight;
-    String name;
+import com.company.Human;
+import com.company.sellable;
 
-    void Feed() {
-        System.out.println("thx");
-        this.weight += 1;
+public abstract class Animal implements sellable, Feedable {
+    public String species;
+    public Double weight;
+    public String name;
+
+    public Animal(String species, String name, double weight) {
+        this.species = species;
+        this.name = name;
+        this.weight = weight;
     }
 
-    void Walk() {
-        System.out.println("szybcieej");
-        this.weight -= 1;
-    }
+    abstract public void feed();
+
+    abstract public void walk();
 
     public String toString() {
         return species + " " + weight + " " + name + " ";

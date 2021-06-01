@@ -1,5 +1,6 @@
 package com.company;
-
+import com.company.creatures.FarmAnimal;
+import com.company.creatures.Pet;
 import com.company.devices.Car;
 import com.company.devices.Phone;
 
@@ -7,15 +8,11 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
         // write your code here
-        Animal dog = new Animal();
-        dog.species = "Canis familiaris";
-        dog.name = "Szarik";
-        dog.weight = 18.0;
+        Pet dog = new Pet("Canis familiaris", "Szarik", 18.0);
 
-        Animal cat = new Animal();
-        cat.species = "Felis catus";
-        cat.name = "Sierściuch";
-        cat.weight = 2.0;
+        Pet cat = new Pet("Felis catus", "Sierściuch", 2.0);
+
+        FarmAnimal cow = new FarmAnimal("cow??", "just a cow", 150.0);
 
         System.out.println(dog.name);
         System.out.println(dog.species);
@@ -28,9 +25,11 @@ public class Main {
         System.out.println(me.firstName);
         System.out.println(me.pet.name);
 
-        cat.Feed();
-        dog.Feed();
-        dog.Walk();
+        cat.feed();
+        dog.feed();
+        dog.walk();
+        dog.feed(5.0);
+        dog.walk();
 
         Car passat = new Car("Passat", "VW");
         passat.color = "gray";
