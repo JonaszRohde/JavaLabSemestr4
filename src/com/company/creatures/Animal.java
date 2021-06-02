@@ -16,7 +16,7 @@ public abstract class Animal implements sellable, Feedable {
 
     abstract public void feed();
 
-    abstract public void walk();
+    abstract public void takeForAWalk();
 
     public String toString() {
         return species + " " + weight + " " + name + " ";

@@ -12,10 +12,14 @@ public class FarmAnimal extends Animal implements Edible {
     }
 
     @Override
-    public void walk() {
-        this.weight -= 1;
-        System.out.println("Your " + name + " has lost " + this.weight + "kg");
-
+    public void takeForAWalk() {
+        if (this.weight <= 1) {
+            this.weight -= 1;
+            System.out.println("Your" + name + "has died from exhaustion ;(");
+        } else {
+            this.weight -= 1;
+            System.out.println("Your " + name + " has lost " + this.weight + "kg");
+        }
     }
 
     @Override

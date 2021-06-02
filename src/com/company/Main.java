@@ -27,12 +27,12 @@ public class Main {
         System.out.println(me.pet.name);
 
         cow.feed(20.0);
-        cow.walk();
+        cow.takeForAWalk();
         cat.feed();
         dog.feed();
-        dog.walk();
+        dog.takeForAWalk();
         dog.feed(5.0);
-        dog.walk();
+        dog.takeForAWalk();
 
         Disel passat = new Disel("Passat", "VW", 2005);
         passat.color = "gray";
