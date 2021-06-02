@@ -16,8 +16,8 @@ public class Phone extends Device implements sellable {
     static final String DEFAULT_SERVER_PROTOCOL = "http";
     static final String DEFAULT_VERSION_NAME = "latest";
 
-    public Phone(String producer, String model, int yearOfProduction) {
-        super(producer, model, yearOfProduction);
+    public Phone(String producer, String model, int yearOfProduction, double price) {
+        super(producer, model, yearOfProduction, price);
     }
 
     public void turnOn() {

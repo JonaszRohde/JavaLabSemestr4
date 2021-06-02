@@ -1,8 +1,8 @@
 package com.company.devices;
 
 public class Disel extends Car {
-    public Disel(String producer, String model, int yearOfProduction) {
-        super(producer, model, yearOfProduction);
+    public Disel(String producer, String model, int yearOfProduction, double price) {
+        super(producer, model, yearOfProduction, price);
     }
 
     @Override
